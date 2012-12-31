@@ -17,6 +17,8 @@ create a watcher using [FSWatcher](http://nodejs.org/api/fs.html#fs_class_fs_fsw
 ---------------------------------------------------------------------------------------
 
 ```
+var DirectoryWatcher = require('directory-watcher');
+
 DirectoryWatcher.create('/path/to/somewhere', function(err, watcher) {
 	watcher.once('changed', function(files) {
 		console.log('will fire once');		
@@ -37,6 +39,8 @@ using without [FSWatcher](http://nodejs.org/api/fs.html#fs_class_fs_fswatcher) o
 -------------------------------------
 
 ```
+var DirectoryWatcher = require('directory-watcher');
+
 DirectoryWatcher.createEx('/path/to/somewhere', function(err, watcher) {
 	var onFileEvent = watcher.listener();
 	onFileEvent('rename', undefined);
@@ -47,6 +51,7 @@ DirectoryWatcher.createEx('/path/to/somewhere', function(err, watcher) {
 or
 
 ```
+var DirectoryWatcher = require('directory-watcher');
 var fs = require('fs');
 
 DirectoryWatcher.createEx('/path/to/somewhere', function(err, watcher) {
