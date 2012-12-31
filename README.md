@@ -7,14 +7,14 @@ A directory watcher that keeps an in memory list of the files in the directory, 
 The API also provides "nicer" events using the [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter) API: "changed", "added", "deleted". (currently "changed" doesn't function properly when underlying watcher doesn't
 supply the filename)
 
-Install
--------------------------
+### Install ###
+
 ```
 	npm install directory-watcher
 ```
 
-create a watcher using [FSWatcher](http://nodejs.org/api/fs.html#fs_class_fs_fswatcher)
----------------------------------------------------------------------------------------
+
+### create a watcher using [FSWatcher](http://nodejs.org/api/fs.html#fs_class_fs_fswatcher) ###
 
 ```
 var DirectoryWatcher = require('directory-watcher');
@@ -35,8 +35,8 @@ DirectoryWatcher.create('/path/to/somewhere', function(err, watcher) {
 
 ```
 
-using without [FSWatcher](http://nodejs.org/api/fs.html#fs_class_fs_fswatcher) or with extental FSWatcher (untested)
--------------------------------------
+
+### using without [FSWatcher](http://nodejs.org/api/fs.html#fs_class_fs_fswatcher) or with extental FSWatcher (untested) ###
 
 ```
 var DirectoryWatcher = require('directory-watcher');
