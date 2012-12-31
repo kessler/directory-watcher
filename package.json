@@ -1,0 +1,13 @@
+{
+    "name": "DirectoryWatcher",
+    "version": "1.0.0",
+    "description": "A directory watcher",
+    "main": "lib/DirectoryWatcher.js",
+    "dependencies": {    
+        "log4js": "*",        
+        "underscore": "*"
+    },
+    "devDependencies": {
+        "vows": "*"
+    }
+}
