@@ -33,7 +33,6 @@ function cleanup () {
 	fs.rmdirSync(TEST_DIR);
 }	
 
-
 setupTestDirectory();
 writeTestFile('1.js');
 
