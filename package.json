@@ -1,13 +1,15 @@
 {
-    "name": "directory-watcher",
-    "version": "1.0.3",
-    "description": "A directory watcher",
-    "main": "lib/DirectoryWatcher.js",
-    "dependencies": {    
-        "log4js": "*",        
-        "underscore": "*"
-    },
-    "devDependencies": {
-        "vows": "*"
-    }
+  "name": "directory-watcher",
+  "version": "1.0.3",
+  "description": "A directory watcher",
+  "main": "lib/DirectoryWatcher.js",
+  "dependencies": {
+    "debug": "^0.8.1",
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "isos": "0.0.3",
+    "rimraf": "^2.2.8",
+    "vows": "*"
+  }
 }

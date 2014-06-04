@@ -2,10 +2,9 @@ DirectoryWatcher
 ================
 
 A directory watcher that keeps an in memory list of the files in the directory, perfoming diffs on them when events arise from the underlying 
-[FSWatcher](http://nodejs.org/api/fs.html#fs_class_fs_fswatcher), which doesn't always reports back the files that are related to the event.
+[FSWatcher](http://nodejs.org/api/fs.html#fs_class_fs_fswatcher), which doesn't always reports back the files that are related to an event.
 
-The API also provides "nicer" events using the [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter) API: "changed", "added", "deleted". (currently "changed" doesn't function properly when underlying watcher doesn't
-supply the filename)
+The API also provides "nicer" events using the [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter) API: "change", "add", "delete". (currently "change" doesn't function properly *if* the underlying watcher does not return the changed filename)
 
 ### Install ###
 
@@ -36,7 +35,7 @@ DirectoryWatcher.create('/path/to/somewhere', function(err, watcher) {
 ```
 
 
-### using without [FSWatcher](http://nodejs.org/api/fs.html#fs_class_fs_fswatcher) or with extental FSWatcher (untested) ###
+### using without [FSWatcher](http://nodejs.org/api/fs.html#fs_class_fs_fswatcher) or with external FSWatcher (untested) ###
 
 ```
 var DirectoryWatcher = require('directory-watcher');
