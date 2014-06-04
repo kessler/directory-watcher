@@ -1,6 +1,6 @@
 {
   "name": "directory-watcher",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "A directory watcher",
   "main": "lib/DirectoryWatcher.js",
   "dependencies": {
