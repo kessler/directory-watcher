@@ -19,15 +19,15 @@ The API also provides "nicer" events using the [EventEmitter](http://nodejs.org/
 var DirectoryWatcher = require('directory-watcher');
 
 DirectoryWatcher.create('/path/to/somewhere', function(err, watcher) {
-	watcher.once('changed', function(files) {
+	watcher.once('change', function(files) {
 		console.log('will fire once');		
 	});
 
-	watcher.on('deleted', function(files) {
+	watcher.on('delete', function(files) {
 		console.log('%s deleted', files);
 	});
 
-	watcher.on('added', function(files) {
+	watcher.on('add', function(files) {
 		console.log('%s added', files);
 	});
 });
