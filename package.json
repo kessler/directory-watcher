@@ -4,8 +4,8 @@
   "description": "A directory watcher",
   "main": "lib/DirectoryWatcher.js",
   "dependencies": {
-    "debug": "^0.8.1",
-    "lodash": "^2.4.1"
+    "debug": "^3.1.0",
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
     "isos": "0.0.3",
